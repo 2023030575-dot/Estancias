@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/admin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos</title>
 </head>
+
 <body>
-    
+    <h1>Agregar Productos</h1>
+    <div class="contenedor-principal">
+
+        <div class="contenedor-formulario">
+            <form id="formularioProductos">
+                <label for="txtSerie">NUM. SERIE:</label> <input type="text" id="txtNumSerie" name="txtNumSerie">
+
+                <label for="txtMarca">Marca AUTOMOVIL:</label>
+                <select id="txtMarca" name="txtMarca" required>
+                    <option value="">Seleccione una marca</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                </select>
+
+                <label for="txtModelo">Modelo Automovil:</label> <input type="text" name="txtModelo" id="txtModelo">
+                <label for="txtDescripcion">Descripcion Automovil:</label> <input type="text" name="txtDescripcion"
+                id="txtDescripcion">
+                <label for="txtPrecio">Precio (MXN):</label>
+                <input type="number" id="txtPrecio" name="txtPrecio" min="0" step="0.01" required>
+                <label for="txtUrl">URL Imagen Automovil:</label><input type="text" id="txtUrl" name="txtUrl">
+                <input class="subirArchivo" type="file" id="imageInput"> <button type="button"
+                    id="uploadButton">SubirImagen</button>
+
+                <p id="mensaje" style="text-align: center ; color: white;"></p>
+                <button type="button" id="btnAgregar">Agregar</button>
+                <button type="button" id="btnBuscar">Buscar</button>
+                <button type="button" id="btnActualizar">Actualizar</button>
+                <button type="button" id="btnBorrar">Borrar</button>
+                <button type="reset">Limpiar Formulario</button>
+                <a href="/index.html">Regresar</a>
+            </form>
+        </div>
+
+
+        <div class="contenedor-tabla">
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th>Serie</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
 </body>
+
 </html>

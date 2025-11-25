@@ -1,0 +1,126 @@
+body {
+    background-color: #dde2e4; /* Fondo blanco para una sensación de amplitud */
+    font-family: "Arial Black", sans-serif;
+  }
+  
+  h1 {
+    color: #9a8cb8; /* Morado pastel para los títulos */
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #b8c0e0; /* Azul pastel para los formularios */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #6d6875; /* Morado oscuro para contraste en las etiquetas */
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #8e9cc6; /* Borde azul pastel */
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-top: 30px;
+    background-color: #9a8cb8; /* Botones morados pastel */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .subirArchivo {
+    height: 20px;
+    background-color: #9a8cb8; /* Botones morados pastel para subir archivos */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ebebeb; /* Fondo claro para las tablas */
+    border-radius: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+  
+  th {
+    background-color: #b8c0e0; /* Cabeceras de tabla azules pastel */
+    color: #ffffff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #cccccc;
+  }
+  
+  .volver-inicio {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #545478; 
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .btn-volver:hover {
+    background-color: #3a3a5e;
+  }
+  
+  .contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contenedor-formulario {
+    flex: 1; 
+    margin-top: 26px;
+    margin-right: 30px; 
+  }
+  
+  .contenedor-tabla {
+    flex: 1.5; 
+    margin-right: 30px;
+  }
+  
+  button:hover, .subirArchivo:hover, .btn-volver:hover {
+    background-color: #5c7cdb; 
+    color: #ffffff;
+  }
+  button#btnBorrar:hover {
+    background-color: #d9534f; 
+    color: #ffffff;
+  }

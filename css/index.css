@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* selector Universal*/
+* {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* selector de tipo*/
+body {
+
+    background-color: #ffb5f56c;
+    color: white;
+}
+
+hr {
+
+    border: none;
+    height: 4px;
+    background-color: black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3);
+    margin: 20px 0;
+}
+
+/* Selector ID*/
+#contenedor {
+    width: auto;
+    height: auto;
+    background: rgb(255, 77, 246);
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px 0px #371e3d;
+
+}
+
+.contenedorproducts {
+    width: auto;
+    height: auto;
+    background: rgb(19, 77, 124);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 6px 0px #371e3d;
+    display: flex;
+    border: 4px solid;
+    border-color: #000;
+
+}
+
+/*Selector de clase*/
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.imagen-img {
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+    align-items: center;
+}
+
+
+.imglogo {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    height: auto;
+
+
+}
+
+.modelo {
+
+
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: transparent;
+    font-weight: bold;
+    color: black;
+
+}
+
+.descripcion {
+
+    font-family: "Roboto";
+    text-align: justify;
+    font-size: 17px;
+    padding: 7px 23px;
+    font-style: normal;
+    background-color: #0099ff;
+    color: black;
+    height: 300px;
+    width: auto;
+
+}
+
+.boton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.boton:hover {
+
+    background-color: #000;
+    color: white;
+    transform: scale(1, 1);
+    transform: all 0.3s ease;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+
+
+}
+
+.tarjeta {
+
+    box-shadow: 0px 4px 8px rgb(255, 46, 46);
+    overflow: hidden;
+    max-width: 300px;
+    height: 100%;
+    margin: auto;
+    margin: 40px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10px;
+    border: transparent;
+    margin-top: 50px;
+    background-color: white;
+}
+
+/*Práctica Menu*/
+
+.header {
+
+    width: auto;
+    height: auto;
+    background-color: #00153b;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.espacio {
+
+    margin-top: 120px;
+}
+
+.logo {
+
+    font-family: 'Roboto';
+    font-size: 27px;
+    color: white;
+    font-weight: 800;
+}
+
+.header .navbar ul li {
+
+    position: relative;
+    float: left;
+}
+
+.header .navbar ul li a {
+
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-family: 'Roboto';
+}
+
+.header .navbar ul li a:hover {
+
+    color: rgb(226, 223, 43);
+    font-size: 20px;
+}
+
+#menu {
+
+    display: none;
+}
+
+.menu-icon {
+
+    width: 25px;
+}
+
+.header label {
+
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:760px) {
+
+    .header {
+        padding: 30px;
+    }
+
+    .header label {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #002261;
+        display: none;
+    }
+
+    .espacio {
+
+        margin-top: 220px;
+    }
+
+    .header .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+
+    .imglogo {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        height: auto;
+    }
+
+    /*Acomodar carros*/
+
+    .contenedorproducts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        max-width: 90%;
+        
+    }
+
+    .descripcion {
+
+    font-family: "Roboto";
+    text-align: justify;
+    font-size: 12px;
+    padding: 4px 13px;
+    font-style: normal;
+    background-color: #3be789;
+    color: black;
+    height: 150px;
+    width: 265px;
+
+}
+}
+
+#contenedorToyota,
+#contenedorNissan,
+#contenedorFord {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* espacio entre tarjetas */
+    margin-top: 30px;
+}
